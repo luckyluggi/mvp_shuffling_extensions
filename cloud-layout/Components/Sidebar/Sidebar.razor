@@ -1,0 +1,21 @@
+@namespace Layout
+@attribute [PiralExtension("CloudLayout.Sidebar")]
+
+<div
+    class="sidebar"
+    style="background: yellow;"
+>
+    <div>
+        <Extension name="CloudLayout.Sidebar.Top" />
+        <MainNavigation Items=@MainNavigationItems></MainNavigation>
+    </div>
+    <div>
+        <Extension name="CloudLayout.Sidebar.Bottom" />
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    [PiralParameter("params.mainNavigationItems")]
+    public List<NavigationItem> MainNavigationItems { get; set; } = new();
+}

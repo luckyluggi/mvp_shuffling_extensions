@@ -1,0 +1,17 @@
+.statusbar {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  color: white;
+}
+.statusbar > .left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.statusbar > .right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}/*# sourceMappingURL=Statusbar.razor.css.map */

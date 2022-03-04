@@ -1,0 +1,33 @@
+.layout {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-areas: "topbar topbar" "sidebar content" "statusbar statusbar";
+  grid-template-rows: 6rem 1fr 4rem;
+  grid-template-columns: 20rem 1fr;
+}
+.layout--no-sidebar {
+  grid-template-areas: "topbar topbar" "content content" "statusbar statusbar";
+}
+.layout header {
+  grid-area: topbar;
+}
+.layout aside {
+  grid-area: sidebar;
+}
+.layout main {
+  grid-area: content;
+}
+.layout footer {
+  grid-area: statusbar;
+}
+.layout header > div,
+.layout aside > div,
+.layout main > div,
+.layout footer > div,
+.layout header > div > div,
+.layout aside > div > div,
+.layout main > div > div,
+.layout footer > div > div {
+  height: 100%;
+}/*# sourceMappingURL=style.css.map */

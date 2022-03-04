@@ -1,0 +1,16 @@
+.topbar {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.topbar > .left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.topbar > .right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}/*# sourceMappingURL=Topbar.razor.css.map */

@@ -1,0 +1,22 @@
+﻿@namespace Layout
+
+<nav id="main-navigation">
+    @if (Items.Count > 0)
+    {
+        <ul>
+            @foreach (var Item in Items)
+            {
+                <li>
+                    <a href=@Item.link>
+                        @Item.label
+                    </a>
+                </li>
+            }
+        </ul>
+    }
+</nav>
+
+@code {
+    [Parameter]
+    public List<NavigationItem> Items { get; set; } = new();
+}
